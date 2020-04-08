@@ -17,45 +17,122 @@
 
 //---------------------------------
  
-?>
-<?php
-echo "-----------";
-$sumar=0;
- $resta=0;
- $multiplicacion=0;
- $division=0;
+// 
+
+// <form action="<?php echo $_SERVER['PHP_SELF'] " method="post"> 
+// echo "-----------";
+
  $resultado=0;
+ $resultado2=0;
+ 
+  $sumar=0;
+  $resta=0 ;
+  $multiplicar=0;
+  $dividir=0;
+  $potencia=0;
+  $potencia2=0;             
 
 
-
-if(!empty($_POST)){
-echo "test";
-
-        switch ($_POST['option']) {
-              case 'sumar':
-              $sumar=$_POST["numero1"]+$_POST["numero2"];
-              
-              echo "El valor de la suma es: ".$sumar;
-              break;
-              case 'resta':
-              // $restar=$_POST["numero1"] - $_POST["numero2"];
-              echo "El valor de la resta es: ".$resta;
-              break;
-              case 'multiplicar':
-              // $multiplicar=$_POST["numero1"] * $_POST["numero2"];
-              echo "El valor es: ".$multiplicacion;
-              break;
-              case 'division':
-              // $division=$_POST["numero1"] / $_POST["numero2"];
-              echo "El valor es: ".$division;
-              break;
-              default:
-                # code...
-                break;
-              }
-            }
-        // }
-
-var mensaje = ""
-
+if(isset($_POST['option'])){
+    $opcion=$_POST['option'];
+    
+                          switch ($opcion) {
+                            case 'sumar':
+                              $resultado=$_POST["numero1"] + $_POST["numero2"];
+                              echo "El resultado es: ".$resultado;
+                              break;
+                            case 'restar':
+                              $restar=$_POST['numero1'] - $_POST['numero2'];
+                              echo "El resultado es: ".$restar;
+                              break;
+                            case 'multiplicar':
+                              $resultado=$_POST["numero1"] * $_POST["numero2"]; 
+                              echo "El resultado es: ".$resultado;
+                              break;
+                            case 'division':
+                              $resultado=$_POST["numero1"] / $_POST["numero2"];
+                              echo "El resultado es: ".$resultado;
+                             break;
+                            case 'potencia':
+                              $resultado= pow( $_POST['numero1'], $_POST["numero3"]);
+                              $resultado2= pow($_POST['numero2'],$_POST["numero3"]);
+                              echo "El resultado es: ".$resultado;
+                              echo "</br>";
+                              echo "El resultado es: ".$resultado2;
+                            break;
+                            case 'promedio':
+                                  $resultado= $_POST["numero1"]+$_POST["numero2"]+$_POST["numero3"]+$_POST["numero4"]+$_POST["numero5"]+$_POST["numero6"]+$_POST["numero7"]+$_POST["numero8"]+$_POST["numero9"]+$_POST["numero10"];
+                                  $resultado=$resultado / 10;
+                                  echo "El promedio es: ".$resultado;
+                              break;
+                            case 'ordenmayormenor':
+                              arsort($_POST);
+                                    foreach ($_POST as $value) {
+                                      echo "<pre>";
+                                      echo "El valor es: " . $value;
+                                      echo "</pre>";
+                                    }
+                              break;
+                              case 'ordenmenormayor':
+                                asort($_POST);
+                                foreach ($_POST as $value) {
+                                  echo "<pre>";
+                                  echo "El valor es: " . $value;
+                                  echo "</pre>";
+                                }
+                                break;
+                            case 'invertirelordendelosnumeros':
+                                  ksort($_POST);
+                                  foreach ($_POST as $value) {
+                                    echo "<pre>";
+                                    echo "El valor es: " . $value;
+                                    echo "</pre>";
+                                  }
+                              break;
+                            case 'buscarelmayoryelmenor':
+                              echo "El mayor es: ". max($_POST["numero1"],$_POST["numero2"],$_POST["numero3"],$_POST["numero4"],$_POST["numero5"],$_POST["numero6"],$_POST["numero7"],$_POST["numero8"],$_POST["numero9"],$_POST["numero10"]);
+                              echo "</br>";
+                              echo "El menor es: ". min($_POST["numero1"],$_POST["numero2"],$_POST["numero3"],$_POST["numero4"],$_POST["numero5"],$_POST["numero6"],$_POST["numero7"],$_POST["numero8"],$_POST["numero9"],$_POST["numero10"]);
+                              break;
+                            case 'sumar':
+                              echo "sumar";
+                              break;
+                            default:
+                            break;
+                            }
+  
+                            
+                  } elseif (isset($_POST)){
+                                if (isset($_REQUEST['suma'])) {
+                                  $sumar=$_POST["numero1"] + $_POST["numero2"];
+                                  echo "El resultado de la suma es: ".$sumar;
+                                  echo "<br>";
+                                }      
+                                if (isset($_REQUEST['resta'])) {
+                                  $restar=$_POST['numero1'] - $_POST['numero2'];
+                                  echo "El resultado de la suma es: ".$restar;
+                                  echo "<br>";
+                                }
+                                if (isset($_REQUEST['multiplica'])) {
+                                  $multiplicar=$_POST["numero1"] * $_POST["numero2"];
+                                  echo "El resultado de la multiplicacion es: ".$multiplicar;
+                                   echo "<br>";                                  
+                                }
+                                if (isset($_REQUEST['divide'])) {
+                                  $dividir=$_POST["numero1"] / $_POST["numero2"];
+                                  echo "El resultado de la division es: ".$dividir; 
+                                  echo "<br>"; 
+                                }     
+                                if (isset($_REQUEST['potencia'])) {
+                                  $potencia= pow( $_POST['numero1'], $_POST["numero3"]);
+                                  $potencia2= pow($_POST['numero2'],$_POST["numero3"]);
+                                  echo "Potencia numero 1 : ".$potencia;
+                                  echo "</br>";
+                                  echo "Potencia numero 2 : ".$potencia2;
+                                  
+                                }
+                            }else {
+                              echo "no hay opcion selecionada";
+                            }
+                            
 ?>

@@ -1,7 +1,11 @@
 {
 	"folders": [
 		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/webprogramming2/webprogramming2"
+		},
+		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {}
 }
