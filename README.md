@@ -60,6 +60,3 @@ Teléfono
 Área de la empresa a quien se quiere mandar la consulta.
 Comentario
 Al presionar enviar se debe generar un email.
- 
-
-
