@@ -80,7 +80,7 @@
                       <a href="index.php">Home</a>
                   </p>
                   <p>
-                      <a href="#!">Catologo</a>
+                      <a href="detalleproducto.php">Catologo</a>
                   </p>
                   <p>
                       <a href="#!">Contacto</a>
@@ -124,7 +124,7 @@
                           <path fill-rule="evenodd"
                               d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z"
                               clip-rule="evenodd" />
-                      </svg> New York, NY 10012, US
+                      </svg> Av Corrientes 1643, Bs As, Argentina
                   </p>
                   <p>
                       <svg class="bi bi-envelope mr-3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
