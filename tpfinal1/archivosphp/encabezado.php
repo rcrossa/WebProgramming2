@@ -40,11 +40,11 @@
             <ul class="navbar-nav mr-auto mt-2 mt-xl-0">
               <li class="nav-item active">
                 <!--FALTA IMG, ALT Y LINK-->
-                <a class="nav-link" href="#!"><img src="" alt="" width="49" height="39"> Home</a>
+                <a class="nav-link" href="index.php"><img src="" alt="" width="49" height="39"> Home</a>
               </li>
               <li class="nav-item">
                 <!--FALTA IMG, ALT Y LINK-->
-                <a class="nav-link" href=""><img src="" alt="">Catalogo</a>
+                <a class="nav-link" href="detalleproducto.php"><img src="" alt="">Catalogo</a>
               </li>
               <li class="nav-item">
                 <!--FALTA IMG, ALT Y LINK-->

@@ -26,7 +26,7 @@
   <title>VIDEOJUEGOS STORE</title>
 </head>
 
-<body class="fondo">
+<body>
 <?php 
   require_once "archivosphp/encabezado.php";
   require_once "archivosphp/slide.php";
