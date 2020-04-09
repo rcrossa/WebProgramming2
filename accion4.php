@@ -33,12 +33,12 @@
   $potencia2=0;             
 
 
-if(isset($_POST['option'])){
+if(isset($_POST['option']) && !empty($_POST['numero1']) && !empty($_POST['numero2'])){
     $opcion=$_POST['option'];
     
                           switch ($opcion) {
                             case 'sumar':
-                              $resultado=$_POST["numero1"] + $_POST["numero2"];
+                              $resultado=$_POST['numero1'] + $_POST['numero2'];
                               echo "El resultado es: ".$resultado;
                               break;
                             case 'restar':
@@ -102,37 +102,34 @@ if(isset($_POST['option'])){
                             }
   
                             
-                  } elseif (isset($_POST)){
-                                if (isset($_REQUEST['suma'])) {
-                                  $sumar=$_POST["numero1"] + $_POST["numero2"];
-                                  echo "El resultado de la suma es: ".$sumar;
-                                  echo "<br>";
-                                }      
-                                if (isset($_REQUEST['resta'])) {
-                                  $restar=$_POST['numero1'] - $_POST['numero2'];
-                                  echo "El resultado de la suma es: ".$restar;
-                                  echo "<br>";
-                                }
-                                if (isset($_REQUEST['multiplica'])) {
-                                  $multiplicar=$_POST["numero1"] * $_POST["numero2"];
-                                  echo "El resultado de la multiplicacion es: ".$multiplicar;
-                                   echo "<br>";                                  
-                                }
-                                if (isset($_REQUEST['divide'])) {
-                                  $dividir=$_POST["numero1"] / $_POST["numero2"];
-                                  echo "El resultado de la division es: ".$dividir; 
-                                  echo "<br>"; 
-                                }     
-                                if (isset($_REQUEST['potencia'])) {
-                                  $potencia= pow( $_POST['numero1'], $_POST["numero3"]);
-                                  $potencia2= pow($_POST['numero2'],$_POST["numero3"]);
-                                  echo "Potencia numero 1 : ".$potencia;
-                                  echo "</br>";
-                                  echo "Potencia numero 2 : ".$potencia2;
-                                  
-                                }
-                            }else {
-                              echo "no hay opcion selecionada";
-                            }
+                  } elseif (isset($_POST['option']) && isset($_REQUEST['numero1']) && isset($_REQUEST['numero2'])){
+                                              if (isset($_REQUEST['suma'])) {
+                                                $sumar=$_POST["numero1"] + $_POST["numero2"];
+                                                echo "El resultado de la suma es: ".$sumar;
+                                                echo "<br>";
+                                              }elseif (isset($_REQUEST['resta'])) {
+                                                $restar=$_POST['numero1'] - $_POST['numero2'];
+                                                echo "El resultado de la suma es: ".$restar;
+                                                echo "<br>";
+                                              }elseif (isset($_REQUEST['multiplica'])) {
+                                                $multiplicar=$_POST["numero1"] * $_POST["numero2"];
+                                                echo "El resultado de la multiplicacion es: ".$multiplicar;
+                                                echo "<br>";                                  
+                                              }elseif (isset($_REQUEST['divide'])) {
+                                                $dividir=$_POST["numero1"] / $_POST["numero2"];
+                                                echo "El resultado de la division es: ".$dividir; 
+                                                echo "<br>"; 
+                                              }elseif (isset($_REQUEST['potencia'])) {
+                                                          $potencia= pow( $_POST['numero1'], $_POST["numero3"]);
+                                                          $potencia2= pow($_POST['numero2'],$_POST["numero3"]);
+                                                          echo "Potencia numero 1 : ".$potencia;
+                                                          echo "</br>";
+                                                          echo "Potencia numero 2 : ".$potencia2;
+                                              }else {
+                                                echo "no hay opcion selecionada";
+                                                  }
+                                            }else{
+                                              echo "no hay opcion selecionada o datos completos";
+                                            }
                             
 ?>
