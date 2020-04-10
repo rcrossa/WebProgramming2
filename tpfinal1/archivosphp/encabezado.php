@@ -44,7 +44,7 @@
               </li>
               <li class="nav-item">
                 <!--FALTA IMG, ALT Y LINK-->
-                <a class="nav-link" href="detalleproducto.php"><img src="" alt="">Catalogo</a>
+                <a class="nav-link" href="listado.php"><img src="" alt="">Catalogo</a>
               </li>
               <li class="nav-item">
                 <!--FALTA IMG, ALT Y LINK-->
