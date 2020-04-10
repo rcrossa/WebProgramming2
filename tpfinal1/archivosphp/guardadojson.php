@@ -5,7 +5,7 @@ $file= 'archivo.json';
 $post =['java',"1"];
 //defino variable
 $voto;
-$voto1=array();
+$voto1=array():
 $c=array();
 $votoextraido;
 $a=array();
