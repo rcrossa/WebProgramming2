@@ -29,7 +29,7 @@
 <body>
 <?php 
   require_once "archivosphp/encabezado.php";
-  require_once "archivosphp/detalleproducto.php";
+  require_once "archivosphp/titulodetalle.php";
   require_once "archivosphp/slidedetalle.php";
   require_once "archivosphp/footer.php";
 
