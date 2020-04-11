@@ -4,7 +4,8 @@
     <div class="container">
       <div class="row">
         <div class="col-10 col-sm-10 col-md-10 col-lg-10">
-        <h3>The Witcher</h3>
+        <h3>NOMBRE DEL JUEGO</h3>
+        <h3>
         <div>fecha de lanzamiento | 
           <div class="ec-stars-wrapper">
 	        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
@@ -15,6 +16,7 @@
           </div>
           <noscript>Necesitas tener habilitado javascript para poder votar</noscript>
           </div>
+          </h3>
         </div>
       </div>
     </div>
