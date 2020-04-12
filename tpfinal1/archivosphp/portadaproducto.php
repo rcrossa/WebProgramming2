@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-4 col-sm-4 col-md-4 col-lg-4">
           <!--falta el link a detalle juego-->
-          <a href="" target="_blank"> <img src="images/GTAV.jpg" alt="GTAV" width="700" height="500"
+          <a href="" target="_blank"> <img src="../images/GTAV.jpg" alt="GTAV" width="700" height="500"
               class="img-fluid img-thumbnail"></a>
           <!--falta clase-->
           <div class="">
