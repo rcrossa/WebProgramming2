@@ -6,11 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-<form action="accion4.php" method="post">
+<form action="accion6.php" method="get">
         <label for="number1">Primer Numero:</label><br>
         <input type="number" name="numero1" value="numero1"><br>
         <label for="number2">Segundo numero:</label><br>
         <input type="number" id="lname" name="numero2" value="numero2"><br>
+        <label for="number3">Tercero Numero:</label><br>
+        <input type="number" name="numero3" value="numero3"><br>
+        <label for="number4">Cuarto numero:</label><br>
+        <input type="number" id="lname" name="numero4" value="numero4"><br>
+        <label for="number5">Quinto Numero:</label><br>
+        <input type="number" name="numero5" value="numero5"><br>
+        <label for="number6">Sexto numero:</label><br>
+        <input type="number" id="lname" name="numero6" value="numero6"><br>
+        <label for="number7">Septimo Numero:</label><br>
+        <input type="number" name="numero7" value="numero7"><br>
+        <label for="number8">Octavo numero:</label><br>
+        <input type="number" id="lname" name="numero8" value="numero8"><br>
+        <label for="number9">Noveno Numero:</label><br>
+        <input type="number" name="numero9" value="numero9"><br>
+        <label for="number10">Decimo numero:</label><br>
+        <input type="number" id="lname" name="numero10" value="numero10"><br>
         <label for="number2">Tercer numero:</label><br>
         <input type="number" id="lname" name="numero3" value="numero3"><br><br>
         <input type="checkbox" name="suma"> sumar<br>

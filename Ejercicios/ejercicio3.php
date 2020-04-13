@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-<form action="accion4.php" method="post">
+<form action="accion5.php" method="get">
         <label for="number1">Primer Numero:</label><br>
         <input type="number" name="numero1" value="numero1"><br>
         <label for="number2">Segundo numero:</label><br>
         <input type="number" id="lname" name="numero2" value="numero2"><br><br>
-        <input type="checkbox" name="suma"> sumar<br>
-        <input type="checkbox" name="resta"> restar<br>
-        <input type="checkbox" name="multiplica"> multiplicar<br>
-        <input type="checkbox" name="divide"> division<br><br><br>
+        <input type="checkbox" name="suma" value="sumar"> sumar<br>
+        <input type="checkbox" name="resta" value="restar"> restar<br>
+        <input type="checkbox" name="multiplica" value="multiplicar"> multiplicar<br>
+        <input type="checkbox" name="divide" value="dividir"> division<br><br><br>
         <p><input type="submit" value="enviar"/></p>
 </form>
 </body>
