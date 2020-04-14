@@ -27,8 +27,8 @@
         <input type="number" name="numero9" value="numero9"><br>
         <label for="number10">Decimo numero:</label><br>
         <input type="number" id="lname" name="numero10" value="numero10"><br>
-        <label for="number2">Tercer numero:</label><br>
-        <input type="number" id="lname" name="numero3" value="numero3"><br><br>
+        <label for="number11">Potencia (si selecciona la operacion):</label><br>
+        <input type="number" id="lname" name="numero11" value="numero11"><br><br>
         <input type="checkbox" name="suma"> sumar<br>
         <input type="checkbox" name="resta"> restar<br>
         <input type="checkbox" name="multiplica"> multiplicar<br>

@@ -33,8 +33,8 @@ if(isset($_POST['option']) && !empty($_POST['numero1']) && !empty($_POST['numero
                               echo "El resultado es: ".$resultado;
                              break;
                             case 'potencia':
-                              $resultado= pow( $_POST['numero1'], $_POST["numero3"]);
-                              $resultado2= pow($_POST['numero2'],$_POST["numero3"]);
+                              $resultado= pow($_POST['numero1'],$_POST['numero3']);
+                              $resultado2= pow($_POST['numero2'],$_POST['numero3']);
                               echo "El resultado es: ".$resultado;
                               echo "</br>";
                               echo "El resultado es: ".$resultado2;
