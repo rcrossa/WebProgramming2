@@ -1,0 +1,258 @@
+body{
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.contacto{
+	background-image:url(images/fondocontacto.jpg);
+}
+
+
+/* Configuracion Menu */
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(22, 132, 206, 0.5) !important;
+	margin: .1rem 0;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+	background-color:rgb(28, 32, 29);
+}
+
+.w-100 {
+    width: 100% !important;
+	margin: 5.5rem auto;
+	margin-bottom: 2rem;
+}
+.navbar-fixed-top{
+	background: rgba(0, 0, 0, 0.938);
+}
+
+ 
+.informacion{
+	text-align: center;
+	background-color: white;
+}
+
+.titulos{
+	text-align: center;
+}
+
+.atencion{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 80rem;
+}
+
+.ayuda{
+	font-size: 21px;
+	color: white;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+h2{
+	font-size: 18px;
+	color: white;
+	margin-left: 63px;
+    margin-right: 63px;
+}
+
+h3{
+	color: white;
+	font-size: 18px;
+}
+.parrafon{
+	color: white;
+}
+
+.sinopsis{
+	color:white;
+}
+
+.letra-redes{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: black;
+}
+
+.letra{
+	color: white;
+}
+
+
+/* POSTERS */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: .9rem;
+}
+
+img {
+
+    vertical-align: middle;
+    border-style: none;
+    margin: .5rem;
+
+}
+
+.facebook{
+	margin-top: 8px;
+	margin-bottom: 8px;
+
+}
+
+/* BOTON DE TRAILER */
+@media only screen and (max-width:600px) {
+	.button-container{
+		display:inline-block;
+		margin-bottom:2em;
+		}
+		.button-container a{
+		position:relative;
+		bottom:0em;
+		right:-4rem;
+		background-color:#d40a0a;
+		border-color:    #cf0303;
+		color:white;
+		font-size:11px;
+		padding:1em .5em;
+		text-transform:uppercase;
+		border-color:white;
+		border-radius:1.5em;
+		}
+		h1{
+			font-size: 13px;
+		}
+		h4{
+			font-size: 8px;
+		}
+	}
+
+	@media only screen and (max-width:900px) {
+		.button-container{
+			display:inline-block;
+			margin-bottom:2em;
+			}
+			.button-container a{
+			position:relative;
+			bottom:0em;
+			right:-4rem;
+			background-color:#d40a0a;
+		border-color:    #cf0303;
+			color:white;
+			font-size:1em;
+			padding:1em 1.5em;
+			text-transform:uppercase;
+			border-color:white;
+			border-radius:5em;
+			}
+			h1{
+				font-size: 25px;
+			}
+			h4{
+				font-size: 20px;
+			}
+		}
+
+	@media only screen and (max-width:1800px) {
+		.button-container{
+			display:inline-block;
+			margin-bottom:2em;
+			}
+			.button-container a{
+			position:relative;
+			bottom:0em;
+			right:-4rem;
+			background-color:#d40a0a;
+		border-color:    #cf0303;
+			color:white;
+			font-size:1em;
+			padding:.5em .5em;
+			text-transform:uppercase;
+			border-color:white;
+			border-radius:1.5em;
+			}
+		}
+		
+	label{
+		
+		    display: inline-block;
+    			margin-left: .5em;
+			color: gray;			
+		}
+
+/*Bases y condiciones*/
+a:hover {
+    color: white;
+	text-decoration: underline;
+}
+
+
+
+.btn-primary{
+    color: #fff;
+    background-color: #fd072c;
+    border-color: #ff0229;
+	margin-left: 70px;
+	margin-bottom: 55px;
+	margin-top: 40px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+ 	background-color: #000000;
+    border-color: #ff0229;
+	}
+	
+	.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+  	background-color: #fd072c;
+    border-color: #ff0229;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(253,7,44,.5);
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	margin-left:25px;
+	margin-right: 25px;
+}
+
+.text-uppercase{
+	color: white;
+}
+
+.margen{
+	margin-top: 2rem;
+}
+
+.mt-md-0, .my-md-0 {
+    margin-top: 8.5rem !important;
+}
+.titulo{
+	color:white;
+}
+
+.contorno{
+	padding: 2px;
+	background-color:#fff;
+	border: 1px #000000;
+	border-radius: .25rem;	
+}
